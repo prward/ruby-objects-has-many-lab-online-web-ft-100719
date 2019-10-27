@@ -4,7 +4,7 @@ describe 'Post' do
   let!(:post) { Post.new('My Blog Post!') }
   let!(:post2) { Post.new('My Newest Blog Post!') }
 
-  
+end
   end
 
   describe '#new' do
