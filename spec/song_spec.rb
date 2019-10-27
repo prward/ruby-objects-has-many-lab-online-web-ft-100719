@@ -22,11 +22,7 @@ describe 'Song' do
     end
   end
 
-  describe '.all' do
-    it 'is a class method that returns an array of all song instances that have been created' do
-      expect(Song.all).to match([song, song2])
-    end
-  end
+  
 
   describe '#name' do
     it 'has a name' do
