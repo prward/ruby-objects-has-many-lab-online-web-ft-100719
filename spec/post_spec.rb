@@ -14,9 +14,7 @@ describe "Post" do
       expect { Post.new('Hello World') }.to_not raise_error
     end
 
-    it 'pushes new instances into a class variable called @@all upon initialization' do
-      expect(Post.class_variable_get(:@@all)).to match([post, post2])
-    end
+    
   end
 
   describe '@@all' do
