@@ -1,11 +1,6 @@
 require 'spec_helper'
 
-describe 'Post' do
-  let!(:post) { Post.new('My Blog Post!') }
-  let!(:post2) { Post.new('My Newest Blog Post!') }
 
-end
-  end
 
   describe '#new' do
     it 'is initialized with an argument of a title' do
