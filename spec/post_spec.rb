@@ -1,6 +1,13 @@
 require 'spec_helper'
 
+describe "Post" do 
 
+  let!(:post){Post.new("My Blog Post!")}
+  describe "#new" do 
+    it "is initialized with an argument of a title" do 
+      expect{Post.new("Hello World")}.to_not raise_error
+    end
+  end
 
   describe '#new' do
     it 'is initialized with an argument of a title' do
