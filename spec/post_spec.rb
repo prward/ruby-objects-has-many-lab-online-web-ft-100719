@@ -4,8 +4,7 @@ describe 'Post' do
   let!(:post) { Post.new('My Blog Post!') }
   let!(:post2) { Post.new('My Newest Blog Post!') }
 
-  after(:each) do
-    Post.class_variable_set(:@@all, [])
+  
   end
 
   describe '#new' do
